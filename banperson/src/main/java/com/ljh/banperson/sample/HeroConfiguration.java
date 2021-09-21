@@ -15,7 +15,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class HeroConfiguration {
     @Bean
-    @ConditionalOnBean(name = "mysql")
+//    @ConditionalOnBean(name = "mysql")
 //    @ConditionalOnProperty(value = "hero.condition", havingValue = "camille")
 //    @Conditional(CamilleCondition.class)
     public ISkill camille(){
