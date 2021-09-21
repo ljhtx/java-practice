@@ -38,6 +38,19 @@ public class DiAna implements ISkill {
     // 2.只有一个类，通过更改类的属性来达到对应变化
     // 通过修改配置来实现更改类的属性，即直接将类的属性放在了Configuration里头。
     
+    // 在js中，想要使用linUi的时候： npm安装 --》引用组件
+    // 在Spring中，想要使用第三方包：在pom.xml复制包的xml代码 --》import引用- -。。没啥区别啊。。
+    
+    // 自动配置/装配
+    // 1. 原理是什么？
+    //
+    // 2. 为什么要有自动装配？
+    // @Configuration两个作用：1.将属性配置到配置文件中；2.将bean加入到IOC容器之中；
+    // @EnableAutoConfiguration
+    // 模块装配，多个Configuration的组合称为模块
+    
+    
+    
     // @ComponentScan扫描注解，spring通过该注解来扫描对应文件夹下所有的@Component
     // @Conditional条件注解
     public void q(){
