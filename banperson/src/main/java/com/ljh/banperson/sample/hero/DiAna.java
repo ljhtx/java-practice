@@ -34,7 +34,6 @@ public class DiAna implements ISkill {
     //   方案5：使用Conditional+配置项/用户的变换；来决定注入的bean是哪个
     //         内置的Condition方法：
     //         @ConditionOnProperty:
-    //         @
     // 2.只有一个类，通过更改类的属性来达到对应变化
     // 通过修改配置来实现更改类的属性，即直接将类的属性放在了Configuration里头。
     
@@ -43,11 +42,17 @@ public class DiAna implements ISkill {
     
     // 自动配置/装配
     // 1. 原理是什么？
-    //
     // 2. 为什么要有自动装配？
+    // 因为要把配置项加入IOC容器之中
+    
     // @Configuration两个作用：1.将属性配置到配置文件中；2.将bean加入到IOC容器之中；
-    // @EnableAutoConfiguration
-    // 模块装配，多个Configuration的组合称为模块
+    // @EnableAutoConfiguration：模块装配，多个Configuration的组合称为模块
+    // 这种模块的装配就可以称为SPI机制；
+    // SPI机制(Service Provider Interface)
+    // 调用方，标准服务接口，方案A，方案B，方案C
+    // 如果方案A，方案B，方案C都基于某一标准编程，那么调用方就能很方便地切换各个方案
+    // 这里的标准服务接口：基于interface + 策略模式 + 配置文件
+    // @Primary；@条件注解解决的是具体类的变化，SPI是解决整体方案/模块的变化。
     
     
     
